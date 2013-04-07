@@ -1,5 +1,10 @@
 TwistPlayground::Application.routes.draw do
+
   get "welcome/index"
+  get "session/new"
+  post "session/create"
+
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
